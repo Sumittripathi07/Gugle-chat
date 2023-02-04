@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
+// import Main from "./Main";
 
 function App() {
   const [message, setMessage] = useState("");
@@ -8,9 +9,14 @@ function App() {
   const { Configuration, OpenAIApi } = require("openai");
   const configuration = new Configuration({
     organization: "org-b5MOjIvvLEoN6tMBSNSGaOq3",
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
+
+  function Speech(say) {
+    var utterance = new SpeechSynthesisUtterance(say);
+    speechSynthesis.speak(utterance);
+  }
 
   const callApi = async (quest) => {
     const response = await openai.createCompletion({
@@ -21,6 +27,7 @@ function App() {
     });
     let ans = response.data.choices[0].text;
     setAnswer(ans);
+    Speech(ans);
   };
 
   const handleSubmit = async (e) => {
@@ -44,6 +51,7 @@ function App() {
           <div>Answer: {answer}</div>
         </form>
       </div>
+      {/* <Main /> */}
     </div>
   );
 }
