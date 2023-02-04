@@ -9,7 +9,8 @@ function App() {
   const { Configuration, OpenAIApi } = require("openai");
   const configuration = new Configuration({
     organization: "org-b5MOjIvvLEoN6tMBSNSGaOq3",
-    apiKey: "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",
+    // apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 

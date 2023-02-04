@@ -1,10 +1,42 @@
-# Gugle Chat
+# Gugle-chat
 
-In the project directory, you can run:
+Gugle Chat is an AI chat application. You can ask question to Gugle Chat.
 
-### `npm start`
+## Run Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clone the project
 
-You can ask any question to it.
+```bash
+  git clone https://github.com/Sumittripathi07/Gugle-chat.git
+```
+
+Go to the project directory
+
+```bash
+  cd Gugle-chat
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run dev
+```
+
+## Tech Stack
+
+**Client:** React JavaScript
+
+## 🔗 Links
+
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sumit-tripathi-932bb31b5/)
+[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/sumittripathi07/)
+
+## License
+
+Copyright (c) [2023] [Sumit Tripathi](https://github.com/Sumittripathi07)
